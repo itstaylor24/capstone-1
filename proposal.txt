@@ -1,0 +1,56 @@
+
+My Project Proposal for Capstone 1
+
+Questions:
+1. What goal will your website be designed to achieve?
+2. What kind of users will visit your site? In other words, what is the demographic of
+your users?
+3. What data do you plan on using? You may have not picked your actual API yet,
+which is fine, just outline what kind of data you would like it to contain.
+4. In brief, outline your approach to creating your project (knowing that you may not
+know everything in advance and that these details might change later). Answer
+questions like the ones below, but feel free to add more information:
+a. What does your database schema look like?
+b. What kinds of issues might you run into with your API?
+c. Is there any sensitive information you need to secure?
+d. What functionality will your app include?
+e. What will the user flow look like?
+f. What features make your site more than CRUD? Do you have any stretch
+goals?
+Answers:
+1. My website will host a trivia game with a custom design that is geared 
+toward user interest and ability. The goal is to entertain and inform.
+
+2. My main demographic are seniors in senior living homes. I currently work at an assisted living 
+facility and a common activity is trivia. 
+
+3. I will be using resources from an API called opentdb.com or opentrivia database. It is an API that 
+allows users to submit trivia questions to a database organized by category,
+ level of difficulty, amount and type(ie, multiple choice, T/F)
+
+4.
+a.  My thought is that there will be a table for a division—
+which will consists of just two teams(maybe more) and a teams table.
+The division will have an id—the primary key—and a name.
+The team will have an id which is the primary key, a ranking, and a name.
+
+b. I suspect that sometimes there might not be enough questions depending on how many questions the
+user requests for their game.
+
+c. Logging in to view the saved settings which will be the name of the division, its teams, ranking of the teams,
+the previously used question type, category, and amount of questions.
+
+d. All of the functionality previously stated as well as a timer that can be set to the time the users
+prefer, a victory or failure sound and gif when a question is answered correctly or incorrectly respectively. 
+
+e. The first page a user will see will be a login or register page where the can sign up or sign in 
+with their division. The next route will be to a form, that is either prefilled with their saved settings 
+or info that they can update or input for the first time. It includes the team names, 
+selected categories, difficulty level, num of questions, and question type. Then the next page will display
+a question that the first team will have to answer. If they get it correct, they recieve a point. If
+they get in incorrect they recieve no points. This will be repeated for the next team. When all of the questions
+for each team have been answered, a page displaying the final score will appear.
+
+f. I am not sure how to answer the first part of this question. Some stretch goals of mine will be to implement some
+of the Python that was discussed in the Flask/Python Wrap Up section such as url_for and flask-login.
+The implementation of the timer might be difficult as I only know how to do this in JS at the moment.
